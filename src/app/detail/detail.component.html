@@ -1,0 +1,42 @@
+<ion-content>
+  <div style="text-align: center;">
+    <ion-avatar>
+      <img src="https://dkhpfm5hits1w.cloudfront.net/{{coinSelected.n?.toLowerCase()}}.png">
+    </ion-avatar>
+    <br>
+    <ion-label>{{coinSelected?.n}}  {{coinSelected?.s}}</ion-label><br>
+    <ion-label>{{coinSelected?.gs}}</ion-label>
+    <br><br>
+    <ion-label>{{coinSelected?.acr}}</ion-label>
+  </div>
+
+  <ion-grid>
+    <br>
+    <ion-row>
+      <ion-col>Price ($)</ion-col>
+      <ion-col>{{coinSelected?.p}}</ion-col>
+    </ion-row>
+    <br>
+    <ion-row>
+      <ion-col>Volume (USD)</ion-col>
+      <ion-col>{{coinSelected?.v}}</ion-col>
+    </ion-row>
+    <br>
+    <ion-row>
+      <ion-col>Tweet Spam</ion-col>
+      <ion-col>{{coinSelected?.sp}}</ion-col>
+    </ion-row>
+    <br>
+    <ion-row>
+      <ion-col>Social Volume</ion-col>
+      <ion-col>{{coinSelected?.sv}}</ion-col>
+    </ion-row>
+  </ion-grid>
+
+<div></div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar style="text-align: center;">
+    <ion-button routerLink="/home">Footer</ion-button>
+  </ion-toolbar>
+</ion-footer>
